@@ -1,0 +1,4 @@
+<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" data-sly-test.hasContent="${!byline.empty}" class="cmp-text" data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Text">
+   <p class="cmp-text__paragraph">${model.text}</p>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
