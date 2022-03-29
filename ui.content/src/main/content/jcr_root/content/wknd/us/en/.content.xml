@@ -2,14 +2,15 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="WKND Sites Project"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-03-28T17:44:50.355-03:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="wknd/components/page"
-    >
+        pageTitle="WKND Sites Project">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wknd/components/container"
@@ -76,6 +77,69 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="wknd/components/helloworld"
                         text="lalala :)"/>
+                    <image
+                        jcr:created="{Date}2022-03-28T17:18:14.442-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-28T17:24:42.833-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/image"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/wknd/Scarecrow.png"
+                        isDecorative="true"
+                        titleValueFromDAM="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="3"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </image>
+                    <container
+                        jcr:created="{Date}2022-03-28T17:18:25.971-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-28T17:18:25.971-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/container">
+                        <title
+                            jcr:created="{Date}2022-03-28T17:27:12.640-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-28T17:42:28.015-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wknd/components/title"
+                            title="I have bad news for you"/>
+                        <text
+                            jcr:created="{Date}2022-03-28T17:27:30.403-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-28T17:27:30.403-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wknd/components/text"/>
+                        <button
+                            jcr:created="{Date}2022-03-28T17:27:40.512-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-28T17:27:48.400-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Back to homepage"
+                            sling:resourceType="wknd/components/button"/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="9"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </container>
                 </container>
             </container>
         </root>
